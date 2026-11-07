@@ -55,7 +55,10 @@
       return (
         '<article class="project-card theme-' + p.art + '" style="--i:' + i + '">' +
           '<button type="button" class="project-hit" data-project="' + p.id + '" aria-haspopup="dialog">' +
-            '<div class="project-art">' + PROJECT_ART[p.art] + '</div>' +
+            (p.image
+              ? '<div class="project-art has-photo"><img src="' + p.image + '" alt="" loading="lazy"' +
+                  (p.imagePosition ? ' style="object-position:' + p.imagePosition + '"' : '') + ' /></div>'
+              : '<div class="project-art">' + PROJECT_ART[p.art] + '</div>') +
             '<div class="project-body">' +
               '<span class="project-index">0' + (i + 1) + '</span>' +
               '<p class="project-meaning">' + p.meaning[currentLang] + '</p>' +
@@ -94,7 +97,6 @@
     if (openProjectId) fillModal(openProjectId);
     if (avAlbum) fillAlbumView();
     if (lbList) lbShow(lbIndex);
-    if (fbLoaded) loadFbPlugin();
     if (persist) storeSet(lang);
   }
 
@@ -261,8 +263,11 @@
     var p = PROJECTS.filter(function (x) { return x.id === id; })[0];
     if (!p) return;
     var art = $("#modal-art");
-    art.className = "modal-art theme-" + p.art;
-    art.innerHTML = PROJECT_ART[p.art];
+    art.className = "modal-art theme-" + p.art + (p.image ? " has-photo" : "");
+    art.innerHTML = p.image
+      ? '<img src="' + p.image + '" alt="' + p.name[currentLang].replace(/"/g, "&quot;") + '"' +
+          (p.imagePosition ? ' style="object-position:' + p.imagePosition + '"' : '') + ' />'
+      : PROJECT_ART[p.art];
     $("#modal-meaning").textContent = p.meaning[currentLang];
     $("#modal-title").textContent = p.name[currentLang];
     $("#modal-alt").textContent = currentLang === "en" ? p.name.si : p.name.en;
@@ -561,50 +566,12 @@
     });
   }
 
-  /* Facebook Page plugin (loaded only when the section is near the viewport) */
-  var FB_LOCALES = { si: "si_LK", en: "en_US", ta: "ta_IN" };
-  var fbLoaded = false;
-  function loadFbPlugin() {
-    var box = $("#fb-frame");
-    if (!box) return;
-    var w = Math.max(280, Math.min(500, Math.floor(box.clientWidth || 500)));
-    var h = 620;
-    var src = "https://www.facebook.com/plugins/page.php?" + [
-      "href=" + encodeURIComponent("https://www.facebook.com/vikasithaapi"),
-      "tabs=timeline", "width=" + w, "height=" + h,
-      "small_header=false", "adapt_container_width=true", "hide_cover=false", "show_facepile=true",
-      "locale=" + FB_LOCALES[currentLang]
-    ].join("&");
-    box.innerHTML =
-      '<iframe title="Facebook — Vikasitha Api" src="' + src + '" width="' + w + '" height="' + h + '"' +
-      ' style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"' +
-      ' allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>';
-    fbLoaded = true;
-  }
-  function initFbPlugin() {
-    var box = $("#fb-frame");
-    if (!box) return;
-    if (!("IntersectionObserver" in window)) { loadFbPlugin(); return; }
-    var io = new IntersectionObserver(function (entries) {
-      if (entries[0].isIntersecting) { loadFbPlugin(); io.disconnect(); }
-    }, { rootMargin: "400px 0px" });
-    io.observe(box);
-    var lastW = window.innerWidth, timer;
-    window.addEventListener("resize", function () {
-      clearTimeout(timer);
-      timer = setTimeout(function () {
-        if (fbLoaded && Math.abs(window.innerWidth - lastW) > 80) { lastW = window.innerWidth; loadFbPlugin(); }
-      }, 400);
-    });
-  }
-
   /* ---------- boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     var y = $("#year"); if (y) y.textContent = new Date().getFullYear();
     initModal();
     initGallery();
     initLang();
-    initFbPlugin();
     openFromHash();
     initHeader();
     initVideo();

@@ -42,12 +42,6 @@ window.I18N = {
       missionTitle: "මෙහෙවර",
       mission: "ධර්මය, සංස්කෘතිය සහ සමාජ සේවය හරහා ප්‍රජාව එක්කර, අසරණ අයට සහාය වී, තරුණ පරපුර යහපත් පුරවැසියන් ලෙස ගොඩනැගීම."
     },
-    values: {
-      unity: "එකමුතුව",
-      service: "සේවය",
-      virtue: "සාරධර්ම",
-      integrity: "අවංකභාවය"
-    },
     projects: {
       eyebrow: "අපගේ කටයුතු",
       title: "අපගේ ව්‍යාපෘති",
@@ -59,14 +53,12 @@ window.I18N = {
     gallery: {
       eyebrow: "ගැලරිය",
       title: "ඡායාරූප ඇල්බම",
-      sub: "අපගේ වැඩසටහන්වල මතක සටහන් — අපගේ Facebook පිටුවෙන්.",
+      sub: "අපගේ වැඩසටහන්වල මතක සටහන්.",
       photos: "ඡායාරූප",
       view: "ඇල්බමය බලන්න",
       back: "ආපසු",
       showMore: "තවත් ඇල්බම",
-      empty: "ඇල්බම ඉක්මනින් මෙහි පළවේ.",
-      feedTitle: "Facebook හි නවතම",
-      feedSub: "අපගේ නවතම පළකිරීම් සහ ඡායාරූප මෙහිදී සජීවීව බලන්න."
+      empty: "ඇල්බම ඉක්මනින් මෙහි පළවේ."
     },
     connect: {
       eyebrow: "සම්බන්ධ වන්න",
@@ -118,12 +110,6 @@ window.I18N = {
       missionTitle: "Mission",
       mission: "To unite communities through Dhamma, culture and social service, support those in need, and raise the younger generation as responsible citizens."
     },
-    values: {
-      unity: "Unity",
-      service: "Service",
-      virtue: "Virtue",
-      integrity: "Integrity"
-    },
     projects: {
       eyebrow: "What we do",
       title: "Our Projects",
@@ -135,14 +121,12 @@ window.I18N = {
     gallery: {
       eyebrow: "Gallery",
       title: "Photo Albums",
-      sub: "Moments from our programmes — straight from our Facebook page.",
+      sub: "Moments from our programmes.",
       photos: "photos",
       view: "View album",
       back: "Back",
       showMore: "More albums",
-      empty: "Albums will appear here soon.",
-      feedTitle: "Latest on Facebook",
-      feedSub: "See our newest posts and photos, live from our page."
+      empty: "Albums will appear here soon."
     },
     connect: {
       eyebrow: "Connect",
@@ -194,12 +178,6 @@ window.I18N = {
       missionTitle: "பணி",
       mission: "தர்மம், கலாச்சாரம் மற்றும் சமூக சேவை மூலம் சமூகத்தை ஒன்றிணைத்து, தேவையுள்ளவர்களுக்கு உதவி, இளம் தலைமுறையை பொறுப்புள்ள குடிமக்களாக உருவாக்குதல்."
     },
-    values: {
-      unity: "ஒற்றுமை",
-      service: "சேவை",
-      virtue: "விழுமியம்",
-      integrity: "நேர்மை"
-    },
     projects: {
       eyebrow: "எங்கள் செயல்பாடுகள்",
       title: "எங்கள் திட்டங்கள்",
@@ -211,14 +189,12 @@ window.I18N = {
     gallery: {
       eyebrow: "காட்சியகம்",
       title: "புகைப்பட ஆல்பங்கள்",
-      sub: "எங்கள் நிகழ்ச்சிகளின் நினைவுகள் — எங்கள் Facebook பக்கத்திலிருந்து.",
+      sub: "எங்கள் நிகழ்ச்சிகளின் நினைவுகள்.",
       photos: "புகைப்படங்கள்",
       view: "ஆல்பத்தைப் பார்க்க",
       back: "பின்செல்",
       showMore: "மேலும் ஆல்பங்கள்",
-      empty: "ஆல்பங்கள் விரைவில் இங்கே தோன்றும்.",
-      feedTitle: "Facebook இல் சமீபத்தியவை",
-      feedSub: "எங்கள் புதிய பதிவுகளையும் புகைப்படங்களையும் நேரலையாகப் பாருங்கள்."
+      empty: "ஆல்பங்கள் விரைவில் இங்கே தோன்றும்."
     },
     connect: {
       eyebrow: "தொடர்பு",
@@ -236,50 +212,73 @@ window.I18N = {
 /*
  * Projects. Each has a name, an English meaning of the name, and a description per language.
  * "art" picks the illustration drawn on the card (see PROJECT_ART in main.js).
+ * "image" (optional) shows a photo instead of the illustration — put it in resource/projects/.
+ * "imagePosition" (optional) is the photo's focus point when cropped, e.g. "center 35%".
  */
 window.PROJECTS = [
   {
     id: "dhampal",
     art: "echo",
+    image: "resource/projects/dhampal.jpg",
+    imagePosition: "center 35%",
     name: { si: "දම්පල් ප්‍රතිරාවය", en: "Dhampal Prathiraawaya", ta: "தம்பல் பிரதிராவய" },
-    meaning: { si: "ධර්මයේ ප්‍රතිරාවය", en: "Echo of the Dhamma", ta: "தர்மத்தின் எதிரொலி" },
+    meaning: {
+      si: "අනගාරික ධර්මපාලතුමා ජාතික විරු සැමරුම",
+      en: "Anagarika Dharmapala National Hero Commemoration",
+      ta: "அநகாரிக தர்மபால தேசிய வீரர் நினைவேந்தல்"
+    },
     desc: {
-      si: "ධර්මයේ හඬ සමාජය පුරා පතුරුවමින්, ජීවිතයට අර්ථවත් මඟපෙන්වීමක් ලබාදෙන ධර්ම දේශනා හා සාකච්ඡා මාලාව.",
-      en: "A series of Dhamma talks and discussions that carries the voice of the Dhamma across society and offers meaningful guidance for life.",
-      ta: "தர்மத்தின் குரலை சமூகமெங்கும் பரப்பி, வாழ்க்கைக்கு அர்த்தமுள்ள வழிகாட்டலை வழங்கும் தர்ம உரைகள் மற்றும் கலந்துரையாடல் தொடர்."
+      si: "සිංහල ද්වීපයත්, සිංහල ජාතියත්, උතුම් සම්බුද්ධ ශාසනයත් සුරැකීම උදෙසා ආත්ම පරිත්‍යාගයෙන් කැපවූ අව්‍යාජ වීරවරයා අනගාරික ධර්මපාලතුමා බව අපගේ විශ්වාසයයි. ඒ අනුව ඒ උතුම් නාමයට ජාතියේ උත්තමාචාරය පුදනු වස් \"දම්පල් ප්‍රතිරාවය\" තේමාව යටතේ අනගාරික ධර්මපාලතුමා ජාතික විරු සැමරුම පවත්වනු ලබයි.",
+      en: "We believe that Anagarika Dharmapala was the true hero who devoted himself, in selfless sacrifice, to protecting the Sinhala island, the Sinhala nation and the noble Buddha Sasana. To pay the nation's highest tribute to that great name, the Anagarika Dharmapala National Hero Commemoration is held under the theme \"Dhampal Prathiraawaya\".",
+      ta: "சிங்கள தீவையும், சிங்கள இனத்தையும், உன்னத சம்புத்த சாசனத்தையும் பாதுகாப்பதற்காக சுய தியாகத்துடன் அர்ப்பணித்த உண்மையான வீரர் அநகாரிக தர்மபால அவர்களே என்பது எங்கள் நம்பிக்கை. அதன்படி, அந்த உன்னத நாமத்திற்கு தேசத்தின் உயரிய மரியாதையைச் செலுத்தும் வகையில், \"தம்பல் பிரதிராவய\" எனும் கருப்பொருளின் கீழ் அநகாரிக தர்மபால தேசிய வீரர் நினைவேந்தல் நடத்தப்படுகிறது."
     }
   },
   {
     id: "sakmana",
     art: "steps",
+    image: "resource/projects/sakmana.jpg",
     name: { si: "සක්මන", en: "Sakmana", ta: "சக்மன" },
-    meaning: { si: "සක්මන් භාවනාව", en: "The Mindful Walk", ta: "நினைவுடன் நடை" },
+    meaning: {
+      si: "දෑ සසුන් සුරකින පරපුරක් සොයා කෙරෙන පටිසෝතගාමී චාරිකාව",
+      en: "A journey against the stream, in search of a generation to protect nation and Sasana",
+      ta: "இனத்தையும் சாசனத்தையும் காக்கும் சந்ததியைத் தேடும் எதிர்நீரோட்டப் பயணம்"
+    },
     desc: {
-      si: "ප්‍රජාව එක්කරමින්, සිහියෙන් හා සහෝදරත්වයෙන් එකට පෙරට යන ගමනක් ගොඩනඟන ජන සහභාගිත්ව වැඩසටහන.",
-      en: "A community programme that brings people together to walk forward side by side — mindfully, and in a spirit of fellowship.",
-      ta: "சமூகத்தை ஒன்றிணைத்து, நினைவுடனும் சகோதரத்துவத்துடனும் ஒன்றாக முன்னேறும் பயணத்தை உருவாக்கும் மக்கள் பங்கேற்பு நிகழ்ச்சி."
+      si: "\"සක්මන\" දෑ සසුන් සුරකින අනාගත යති පරපුරක් ගොඩනැගීම උදෙසා සිදු කරන පටිසෝතගාමී චාරිකාව. බෞද්ධ සූත්‍ර දේශනාවන් අධ්‍යයනය කිරීමේ මූලික සාකච්ඡාවක් ලෙස ඇරඹි වැඩසටහනකි.",
+      en: "\"Sakmana\" is a Patisotagami Charikawa — a journey against the stream — undertaken to build a future generation of monastics who will protect the nation and the Buddha Sasana. It began as a foundational discussion on studying the Buddhist suttas.",
+      ta: "இனத்தையும் புத்த சாசனத்தையும் பாதுகாக்கும் எதிர்கால துறவிகள் சந்ததியை உருவாக்குவதற்காக மேற்கொள்ளப்படும் எதிர்நீரோட்டப் பயணமே \"சக்மன\". பௌத்த சூத்திர போதனைகளைக் கற்பதற்கான அடிப்படைக் கலந்துரையாடலாக இது ஆரம்பிக்கப்பட்டது."
     }
   },
   {
     id: "amaawaka",
     art: "moon",
+    image: "resource/projects/amawakata-eliyak.jpg",
     name: { si: "අමාවකට එළියක්", en: "Amaawakata Eliyak", ta: "அமாவகட எளியக்" },
-    meaning: { si: "අඳුරට ආලෝකයක්", en: "A Light for the Darkest Night", ta: "இருளுக்கு ஒரு ஒளி" },
+    meaning: {
+      si: "තෙසැත්තෑ බුද්ධ ඤාණ වන්දනාව හා අධිෂ්ඨාන පූජාව",
+      en: "Veneration of the Buddha's 73 Knowledges & Aspiration Offering",
+      ta: "புத்தரின் எழுபத்து மூன்று ஞான வந்தனையும் அதிஷ்டான பூஜையும்"
+    },
     desc: {
-      si: "දුෂ්කරතා මැද ජීවත් වන පවුල් හා දරුවන් වෙත ආලෝකයක් හා බලාපොරොත්තුවක් ගෙනයන සමාජ සුබසාධන හා සහන වැඩසටහන.",
-      en: "A social welfare and relief programme that brings light and hope to families and children living through hardship.",
-      ta: "கஷ்டங்களுக்கு மத்தியில் வாழும் குடும்பங்கள் மற்றும் குழந்தைகளுக்கு ஒளியையும் நம்பிக்கையையும் கொண்டு செல்லும் சமூக நல மற்றும் நிவாரண நிகழ்ச்சி."
+      si: "මේ උතුම් පුණ්‍ය භූමියේ අරිහතුන් වහන්සේලා ලක්ෂ ගණනින් පහළවේවා'යි යන උතුම් අධිෂ්ඨානයෙන් විකසිත ජාතික එකමුතුව විසින් සංවිධානය කරන උතුම් තෙසැත්තෑ බුද්ධ ඤාණ වන්දනාව හා අධිෂ්ඨාන පූජාව.",
+      en: "With the noble aspiration that Arahants may arise in their hundreds of thousands in this sacred land, Vikasitha Jaathika Ekamuthuwa organises the noble Tesaththa Buddha Gnana Vandanawa — a veneration of the Buddha's seventy-three knowledges — together with an Adhishtana Pooja, an offering of aspiration.",
+      ta: "இந்தப் புனித பூமியில் இலட்சக்கணக்கான அரஹந்தர்கள் தோன்றட்டும் என்ற உன்னத அதிஷ்டானத்துடன், விகசித ஜாதிக எகமுதுவ ஏற்பாடு செய்யும் புத்தரின் எழுபத்து மூன்று ஞான வந்தனையும் அதிஷ்டான பூஜையும்."
     }
   },
   {
     id: "sathsith",
     art: "lotus",
-    name: { si: "සත්සිත්", en: "Sathsith", ta: "சத்சித்" },
-    meaning: { si: "යහපත් සිත්", en: "Noble Minds", ta: "நல்ல மனங்கள்" },
+    image: "resource/projects/sathsith.jpg",
+    name: { si: "සත් සිත්", en: "Sath Sith", ta: "சத் சித்" },
+    meaning: {
+      si: "සොඳුරු තාරුණ්‍යයේ අරුත්බර තුන් පැය",
+      en: "Three meaningful hours of beautiful youth",
+      ta: "அழகிய இளமையின் அர்த்தமுள்ள மூன்று மணி நேரம்"
+    },
     desc: {
-      si: "තරුණ පරපුරේ මනස සහ චරිතය සවිමත් කරමින්, යහපත් සිතුවිලි හා නායකත්වය වගා කරන වැඩසටහන.",
-      en: "A programme that strengthens the minds and character of young people, cultivating wholesome thinking and leadership.",
-      ta: "இளம் தலைமுறையின் மனதையும் பண்பையும் வலுப்படுத்தி, நல்ல எண்ணங்களையும் தலைமைத்துவத்தையும் வளர்க்கும் நிகழ்ச்சி."
+      si: "තෙරුවන් කෙරෙහි අප්‍රමාණ සැදැහැතියෙන්, අපේකමේ උරුමය වෙනුවෙන් හෙට දවසේ සිය යුතුකම කොන්දේසි විරහිතව ඉටුකරන උතුම් මනුෂ්‍ය ගුණධර්මයන්ගෙන් සපිරි දරු පරපුරක් නිර්මාණය කිරීමේ අභිලාෂයෙන් දියත් වන සත්පුරුෂ වෑයමකි සත් සිත්.",
+      en: "Sath Sith is a virtuous endeavour, launched with the aspiration of raising a generation of children rich in noble human virtues — children with boundless faith in the Triple Gem who will, tomorrow, unconditionally fulfil their duty to the heritage of our identity.",
+      ta: "மும்மணிகளின் மீது அளவற்ற பக்தியுடன், நம் பாரம்பரியத்திற்காக நாளைய தினம் தம் கடமையை நிபந்தனையின்றி நிறைவேற்றும், உன்னத மனித நற்பண்புகள் நிறைந்த ஒரு சந்ததியை உருவாக்கும் நோக்கத்துடன் தொடங்கப்பட்ட நல்லோர் முயற்சியே சத் சித்."
     }
   }
 ];

@@ -71,6 +71,7 @@ jobs:
           cp -R assets _site/
           mkdir -p _site/resource
           cp resource/default.mp4 resource/logo.jpeg _site/resource/
+          [ -d resource/projects ] && cp -R resource/projects _site/resource/ || true
           [ -d resource/gallery ] && cp -R resource/gallery _site/resource/ || true
           mkdir -p _site/data
           if [ -f data/gallery.js ]; then
