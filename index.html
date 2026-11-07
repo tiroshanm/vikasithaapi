@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>විකසිත ජාතික එකමුතුව | Vikasitha Jaathika Ekamuthuwa</title>
+  <meta name="description" content="විකසිත ජාතික එකමුතුව — රට දැය සමය උදෙසා එක් සිතින් පෙරට" />
+  <meta name="theme-color" content="#0f1326" />
+  <meta property="og:title" content="විකසිත ජාතික එකමුතුව | Vikasitha Jaathika Ekamuthuwa" />
+  <meta property="og:description" content="රට දැය සමය උදෙසා එක් සිතින් පෙරට" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="resource/logo.jpeg" type="image/jpeg" />
+  <meta property="og:image" content="resource/logo.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Noto+Serif+Sinhala:wght@600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="lang-si">
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Home">
+        <img src="resource/logo.jpeg" alt="" class="brand-mark" width="48" height="48" />
+        <span class="brand-text" data-i18n="orgName">විකසිත ජාතික එකමුතුව</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home" data-i18n="nav.home">මුල් පිටුව</a></li>
+          <li><a href="#about" data-i18n="nav.about">අප ගැන</a></li>
+          <li><a href="#mission" data-i18n="nav.mission">මෙහෙවර සහ දැක්ම</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">ව්‍යාපෘති</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">ගැලරිය</a></li>
+          <li><a href="#connect" data-i18n="nav.connect">සම්බන්ධ වන්න</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="si" aria-pressed="true" lang="si">සිං</button>
+          <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+          <button type="button" data-lang="ta" aria-pressed="false" lang="ta">த</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="resource/default.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <h1 class="hero-title reveal" data-i18n="orgName">විකසිත ජාතික එකමුතුව</h1>
+        <p class="hero-tagline reveal" data-i18n="tagline">රට දැය සමය උදෙසා එක් සිතින් පෙරට</p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">අපගේ ව්‍යාපෘති</a>
+          <a href="#connect" class="btn btn-ghost" data-i18n="hero.ctaJoin">අප හා එක්වන්න</a>
+        </div>
+      </div>
+
+      <div class="video-controls">
+        <button type="button" class="vc-btn" id="vc-play" aria-label="Pause video">
+          <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button type="button" class="vc-btn" id="vc-mute" aria-label="Unmute video">
+          <svg class="i-muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.6 3 2.7-2.7-1.4-1.4-2.7 2.7-2.7-2.7-1.4 1.4 2.7 2.7-2.7 2.7 1.4 1.4 2.7-2.7 2.7 2.7 1.4-1.4z"/></svg>
+          <svg class="i-sound" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm11.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM13 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>
+        </button>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="section-eyebrow" data-i18n="about.eyebrow">අප ගැන</p>
+          <h2 class="section-title" data-i18n="about.title">එක් සිතින්, එක් අරමුණකින්</h2>
+          <p class="lead" data-i18n="about.body1"></p>
+          <p data-i18n="about.body2"></p>
+        </div>
+        <div class="about-pillars reveal">
+          <div class="pillar">
+            <span class="pillar-num">01</span>
+            <h3 data-i18n="pillars.country">රට</h3>
+            <p data-i18n="pillars.countryText"></p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-num">02</span>
+            <h3 data-i18n="pillars.nation">දැය</h3>
+            <p data-i18n="pillars.nationText"></p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-num">03</span>
+            <h3 data-i18n="pillars.faith">සමය</h3>
+            <p data-i18n="pillars.faithText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISSION & VISION ============ -->
+    <section class="section mv" id="mission">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow" data-i18n="mv.eyebrow">අපගේ මඟ</p>
+          <h2 class="section-title" data-i18n="mv.title">මෙහෙවර සහ දැක්ම</h2>
+        </div>
+
+        <div class="mv-grid">
+          <article class="mv-card reveal">
+            <div class="mv-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 4v8M24 36v8M4 24h8M36 24h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 data-i18n="mv.visionTitle">දැක්ම</h3>
+            <p data-i18n="mv.vision"></p>
+          </article>
+          <article class="mv-card reveal">
+            <div class="mv-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M10 40V10l14 8 14-8v30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 18v22" stroke="currentColor" stroke-width="2.5"/></svg>
+            </div>
+            <h3 data-i18n="mv.missionTitle">මෙහෙවර</h3>
+            <p data-i18n="mv.mission"></p>
+          </article>
+        </div>
+
+        <ul class="values reveal" aria-label="Values">
+          <li><span data-i18n="values.unity">එකමුතුව</span></li>
+          <li><span data-i18n="values.service">සේවය</span></li>
+          <li><span data-i18n="values.virtue">සාරධර්ම</span></li>
+          <li><span data-i18n="values.integrity">අවංකභාවය</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow" data-i18n="projects.eyebrow">අපගේ කටයුතු</p>
+          <h2 class="section-title" data-i18n="projects.title">අපගේ ව්‍යාපෘති</h2>
+          <p class="section-sub" data-i18n="projects.sub"></p>
+        </div>
+        <div class="project-grid" id="project-grid"><!-- rendered by main.js --></div>
+      </div>
+    </section>
+
+        <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow" data-i18n="gallery.eyebrow">ගැලරිය</p>
+          <h2 class="section-title" data-i18n="gallery.title">ඡායාරූප ඇල්බම</h2>
+          <p class="section-sub" data-i18n="gallery.sub"></p>
+        </div>
+
+        <div class="album-grid" id="album-grid"><!-- rendered by main.js from data/gallery.js --></div>
+        <div class="album-more" id="album-more" hidden>
+          <button type="button" class="btn btn-ghost" id="album-more-btn" data-i18n="gallery.showMore">තවත් ඇල්බම</button>
+        </div>
+        <p class="album-empty" id="album-empty" hidden data-i18n="gallery.empty"></p>
+
+        <div class="fb-feed reveal">
+          <div class="fb-feed-text">
+            <svg class="fb-feed-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+            <h3 data-i18n="gallery.feedTitle">Facebook හි නවතම</h3>
+            <p data-i18n="gallery.feedSub"></p>
+          </div>
+          <div class="fb-frame" id="fb-frame"><!-- Facebook Page plugin injected by main.js --></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONNECT ============ -->
+    <section class="section connect" id="connect">
+      <div class="container connect-inner reveal">
+        <p class="section-eyebrow" data-i18n="connect.eyebrow">සම්බන්ධ වන්න</p>
+        <h2 class="section-title" data-i18n="connect.title">අප හා එක්වන්න</h2>
+        <p class="section-sub" data-i18n="connect.sub"></p>
+        <div class="social-cards">
+          <a class="social-card yt" href="https://www.youtube.com/@VikasithaApi" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            <span class="sc-label">YouTube</span>
+            <span class="sc-handle">@VikasithaApi</span>
+            <span class="sc-cta" data-i18n="connect.subscribe">Subscribe</span>
+          </a>
+          <a class="social-card fb" href="https://www.facebook.com/vikasithaapi" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+            <span class="sc-label">Facebook</span>
+            <span class="sc-handle">/vikasithaapi</span>
+            <span class="sc-cta" data-i18n="connect.follow">Follow</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="resource/logo.jpeg" alt="" class="footer-logo" width="64" height="64" />
+        <div>
+          <strong data-i18n="orgName">විකසිත ජාතික එකමුතුව</strong>
+          <p data-i18n="tagline">රට දැය සමය උදෙසා එක් සිතින් පෙරට</p>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.youtube.com/@VikasithaApi" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/vikasithaapi" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+        </a>
+      </div>
+      <p class="copyright">© <span id="year">2026</span> <span data-i18n="orgName">විකසිත ජාතික එකමුතුව</span>. <span data-i18n="footer.rights"></span></p>
+    </div>
+  </footer>
+
+  <a href="#home" class="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7 1.4 1.4L11 8.8V20h2V8.8l4.6 4.6L19 12z"/></svg>
+  </a>
+
+  <!-- ============ ALBUM VIEW ============ -->
+  <div class="album-view" id="album-view" role="dialog" aria-modal="true" aria-labelledby="av-title" hidden>
+    <header class="av-header">
+      <div class="container av-header-inner">
+        <button type="button" class="av-back" data-av="close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20z"/></svg>
+          <span data-i18n="gallery.back">ආපසු</span>
+        </button>
+        <div class="av-heading">
+          <h3 id="av-title"></h3>
+          <p id="av-meta"></p>
+        </div>
+      </div>
+    </header>
+    <div class="container av-body">
+      <p class="av-desc" id="av-desc"></p>
+      <div class="av-grid" id="av-grid"></div>
+    </div>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button type="button" class="lb-btn lb-close" data-lb="close" aria-label="Close">×</button>
+    <button type="button" class="lb-btn lb-prev" data-lb="prev" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 5.4 14 4l-8 8 8 8 1.4-1.4L8.8 12z"/></svg>
+    </button>
+    <figure class="lb-figure">
+      <img id="lb-img" alt="" />
+      <figcaption><span id="lb-caption"></span> <span class="lb-count" id="lb-count"></span></figcaption>
+    </figure>
+    <button type="button" class="lb-btn lb-next" data-lb="next" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 5.4 10 4l8 8-8 8-1.4-1.4 6.6-6.6z"/></svg>
+    </button>
+  </div>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button type="button" class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-art" id="modal-art"></div>
+      <div class="modal-body">
+        <p class="modal-meaning" id="modal-meaning"></p>
+        <h3 id="modal-title"></h3>
+        <p class="modal-alt" id="modal-alt"></p>
+        <p id="modal-desc"></p>
+        <div class="modal-actions">
+          <a href="https://www.youtube.com/@VikasithaApi" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.watch">Watch on YouTube</a>
+          <a href="https://www.facebook.com/vikasithaapi" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="projects.updates">Updates on Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="data/gallery.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
