@@ -23,29 +23,28 @@ window.I18N = {
     about: {
       eyebrow: "අප ගැන",
       title: "එක් සිතින්, එක් අරමුණකින්",
-      body1: "විකසිත ජාතික එකමුතුව යනු රට, දැය සහ සමය වෙනුවෙන් එක් සිතින් කැපවූ ප්‍රජා සංවිධානයකි.",
-      body2: "ආගමික, සංස්කෘතික හා සමාජීය වැඩසටහන් හරහා ප්‍රජාව එක්කරමින්, සාරධර්ම නංවාලමින් සහ අනාගත පරපුර සවිබල ගන්වමින් දියුණු සමාජයක් ගොඩනැගීම අපගේ අරමුණයි."
+      body1: "විකසිත ජාතික එකමුතුව යනු රට, දැය සහ සමය වෙනුවෙන් එක් සිතින් කැපවූ සිංහල බෞද්ධ ජාතික සංවිධානයකි."
     },
     pillars: {
       country: "රට",
-      countryText: "මාතෘ භූමියේ දියුණුව හා සෞභාග්‍යය වෙනුවෙන් කැපවීම.",
+      countryText: "සිංහලයාගේ උරුමය වූ මේ පුණ්‍ය භූමිය සුරැකීම හා එහි දියුණුව වෙනුවෙන් කැපවීම.",
       nation: "දැය",
-      nationText: "ජනතාව අතර සහෝදරත්වය හා එකමුතුව ශක්තිමත් කිරීම.",
+      nationText: "සිංහල ජාතියේ අනන්‍යතාව, සංස්කෘතිය හා එකමුතුව ශක්තිමත් කිරීම.",
       faith: "සමය",
-      faithText: "ධර්මය හා සාරධර්ම ජීවිතයට එක් කරගැනීම."
+      faithText: "උතුම් බුද්ධ ශාසනය සුරකිමින්, බුදු දහම ජීවිතයට එක් කරගැනීම."
     },
     mv: {
       eyebrow: "අපගේ මඟ",
       title: "මෙහෙවර සහ දැක්ම",
       visionTitle: "දැක්ම",
-      vision: "සාරධර්මයෙන් පොහොසත්, එකමුතුවෙන් ශක්තිමත්, දියුණු ශ්‍රී ලාංකීය සමාජයක්.",
+      vision: "සාරධර්මයෙන් පොහොසත්, එකමුතුවෙන් ශක්තිමත්, දියුණු සිංහල බෞද්ධ සමාජයක්.",
       missionTitle: "මෙහෙවර",
-      mission: "ධර්මය, සංස්කෘතිය සහ සමාජ සේවය හරහා ප්‍රජාව එක්කර, අසරණ අයට සහාය වී, තරුණ පරපුර යහපත් පුරවැසියන් ලෙස ගොඩනැගීම."
+      mission: "බුදු දහම සහ සිංහල සංස්කෘතික උරුමය හරහා ජාතිය එක්කර, දෑ සසුන සුරකින ගුණගරුක තරුණ පරපුරක් ගොඩනැගීම."
     },
     projects: {
       eyebrow: "අපගේ කටයුතු",
       title: "අපගේ ව්‍යාපෘති",
-      sub: "ප්‍රජාව වෙත ආලෝකය, සාරධර්ම සහ බලාපොරොත්තුව ගෙනයන අපගේ වැඩසටහන්.",
+      sub: "දෑ සසුන සුරැකීම උදෙසා එක් සිතින් දියත් කෙරෙන අපගේ වැඩසටහන්.",
       more: "වැඩි විස්තර",
       watch: "YouTube හි නරඹන්න",
       updates: "Facebook පුවත්"
@@ -53,7 +52,7 @@ window.I18N = {
     gallery: {
       eyebrow: "ගැලරිය",
       title: "ඡායාරූප ඇල්බම",
-      sub: "අපගේ වැඩසටහන්වල මතක සටහන්.",
+      sub: "දෑ සසුන උදෙසා අප ගෙවූ ගමනේ අමතක නොවන මොහොත්.",
       photos: "ඡායාරූප",
       view: "ඇල්බමය බලන්න",
       back: "ආපසු",
@@ -65,7 +64,8 @@ window.I18N = {
       title: "අප හා එක්වන්න",
       sub: "අපගේ නවතම වැඩසටහන්, වීඩියෝ සහ පුවත් සඳහා සමාජ මාධ්‍ය හරහා අප හා සම්බන්ධ වන්න.",
       subscribe: "දායක වන්න",
-      follow: "අනුගමනය කරන්න"
+      follow: "අනුගමනය කරන්න",
+      email: "අපට ලියන්න"
     },
     footer: {
       rights: "සියලු හිමිකම් ඇවිරිණි."
@@ -91,29 +91,28 @@ window.I18N = {
     about: {
       eyebrow: "About us",
       title: "One mind, one purpose",
-      body1: "Vikasitha Jaathika Ekamuthuwa is a community organisation dedicated, with one mind, to our country, our people and our faith.",
-      body2: "Through religious, cultural and social programmes we bring communities together, nurture values and empower the next generation to build a flourishing society."
+      body1: "Vikasitha Jaathika Ekamuthuwa is a Sinhala Buddhist national organisation dedicated, with one mind, to our country, our nation and our faith."
     },
     pillars: {
       country: "Country",
-      countryText: "Commitment to the progress and prosperity of our motherland.",
+      countryText: "Dedication to protecting and advancing this sacred land, the heritage of the Sinhala people.",
       nation: "Nation",
-      nationText: "Strengthening brotherhood and unity among our people.",
+      nationText: "Strengthening the identity, culture and unity of the Sinhala nation.",
       faith: "Faith",
-      faithText: "Bringing the Dhamma and its values into everyday life."
+      faithText: "Protecting the noble Buddha Sasana and bringing the Dhamma into everyday life."
     },
     mv: {
       eyebrow: "Our path",
       title: "Mission & Vision",
       visionTitle: "Vision",
-      vision: "A flourishing Sri Lankan society, rich in values and strong in unity.",
+      vision: "A flourishing Sinhala Buddhist society, rich in values and strong in unity.",
       missionTitle: "Mission",
-      mission: "To unite communities through Dhamma, culture and social service, support those in need, and raise the younger generation as responsible citizens."
+      mission: "To unite the nation through the Buddha Dhamma and our Sinhala cultural heritage and raise a virtuous young generation that will protect the nation and the Sasana."
     },
     projects: {
       eyebrow: "What we do",
       title: "Our Projects",
-      sub: "Programmes that carry light, values and hope to our communities.",
+      sub: "Our programmes, carried out with one mind to protect the nation and the Sasana.",
       more: "Learn more",
       watch: "Watch on YouTube",
       updates: "Updates on Facebook"
@@ -121,7 +120,7 @@ window.I18N = {
     gallery: {
       eyebrow: "Gallery",
       title: "Photo Albums",
-      sub: "Moments from our programmes.",
+      sub: "Unforgettable moments from our journey for the nation and the Sasana.",
       photos: "photos",
       view: "View album",
       back: "Back",
@@ -133,7 +132,8 @@ window.I18N = {
       title: "Join Us",
       sub: "Follow us on social media for our latest programmes, videos and news.",
       subscribe: "Subscribe",
-      follow: "Follow"
+      follow: "Follow",
+      email: "Email us"
     },
     footer: {
       rights: "All rights reserved."
@@ -159,29 +159,28 @@ window.I18N = {
     about: {
       eyebrow: "எங்களைப் பற்றி",
       title: "ஒரே மனம், ஒரே இலக்கு",
-      body1: "விகசித ஜாதிக எகமுதுவ என்பது நாடு, இனம் மற்றும் சமயத்திற்காக ஒரே மனதுடன் அர்ப்பணித்த ஒரு சமூக அமைப்பாகும்.",
-      body2: "சமய, கலாச்சார மற்றும் சமூக நிகழ்ச்சிகள் மூலம் சமூகத்தை ஒன்றிணைத்து, விழுமியங்களை வளர்த்து, எதிர்கால சந்ததியை வலுவூட்டி, வளமான சமூகத்தை உருவாக்குவதே எங்கள் இலக்கு."
+      body1: "விகசித ஜாதிக எகமுதுவ என்பது நாடு, இனம் மற்றும் சமயத்திற்காக ஒரே மனதுடன் அர்ப்பணித்த ஒரு சிங்கள பௌத்த தேசிய அமைப்பாகும்."
     },
     pillars: {
       country: "நாடு",
-      countryText: "தாய்நாட்டின் முன்னேற்றத்திற்கும் செழிப்பிற்கும் அர்ப்பணிப்பு.",
+      countryText: "சிங்கள மக்களின் பாரம்பரியமான இந்தப் புனித பூமியைப் பாதுகாத்து முன்னேற்றுவதற்கான அர்ப்பணிப்பு.",
       nation: "இனம்",
-      nationText: "மக்களிடையே சகோதரத்துவத்தையும் ஒற்றுமையையும் வலுப்படுத்துதல்.",
+      nationText: "சிங்கள இனத்தின் அடையாளம், கலாச்சாரம் மற்றும் ஒற்றுமையை வலுப்படுத்துதல்.",
       faith: "சமயம்",
-      faithText: "தர்மத்தையும் விழுமியங்களையும் அன்றாட வாழ்வில் இணைத்தல்."
+      faithText: "உன்னத புத்த சாசனத்தைப் பாதுகாத்து, தர்மத்தை அன்றாட வாழ்வில் இணைத்தல்."
     },
     mv: {
       eyebrow: "எங்கள் பாதை",
       title: "நோக்கும் பணியும்",
       visionTitle: "நோக்கு",
-      vision: "விழுமியங்களால் வளமான, ஒற்றுமையால் வலிமையான, முன்னேறிய இலங்கை சமூகம்.",
+      vision: "விழுமியங்களால் வளமான, ஒற்றுமையால் வலிமையான, முன்னேறிய சிங்கள பௌத்த சமூகம்.",
       missionTitle: "பணி",
-      mission: "தர்மம், கலாச்சாரம் மற்றும் சமூக சேவை மூலம் சமூகத்தை ஒன்றிணைத்து, தேவையுள்ளவர்களுக்கு உதவி, இளம் தலைமுறையை பொறுப்புள்ள குடிமக்களாக உருவாக்குதல்."
+      mission: "புத்த தர்மம் மற்றும் சிங்கள கலாச்சார பாரம்பரியத்தின் மூலம் தேசத்தை ஒன்றிணைத்து, இனத்தையும் சாசனத்தையும் பாதுகாக்கும் நற்பண்புள்ள இளம் தலைமுறையை உருவாக்குதல்."
     },
     projects: {
       eyebrow: "எங்கள் செயல்பாடுகள்",
       title: "எங்கள் திட்டங்கள்",
-      sub: "சமூகத்திற்கு ஒளி, விழுமியங்கள் மற்றும் நம்பிக்கையைக் கொண்டு செல்லும் எங்கள் நிகழ்ச்சிகள்.",
+      sub: "இனத்தையும் சாசனத்தையும் பாதுகாப்பதற்காக ஒரே மனதுடன் முன்னெடுக்கப்படும் எங்கள் நிகழ்ச்சிகள்.",
       more: "மேலும் அறிய",
       watch: "YouTube இல் பாருங்கள்",
       updates: "Facebook செய்திகள்"
@@ -189,7 +188,7 @@ window.I18N = {
     gallery: {
       eyebrow: "காட்சியகம்",
       title: "புகைப்பட ஆல்பங்கள்",
-      sub: "எங்கள் நிகழ்ச்சிகளின் நினைவுகள்.",
+      sub: "இனத்திற்கும் சாசனத்திற்குமான எங்கள் பயணத்தின் மறக்கமுடியாத தருணங்கள்.",
       photos: "புகைப்படங்கள்",
       view: "ஆல்பத்தைப் பார்க்க",
       back: "பின்செல்",
@@ -201,7 +200,8 @@ window.I18N = {
       title: "எங்களுடன் இணையுங்கள்",
       sub: "எங்கள் சமீபத்திய நிகழ்ச்சிகள், காணொளிகள் மற்றும் செய்திகளுக்கு சமூக ஊடகங்கள் வழியாக எங்களுடன் இணையுங்கள்.",
       subscribe: "சந்தா செய்க",
-      follow: "பின்தொடர்க"
+      follow: "பின்தொடர்க",
+      email: "மின்னஞ்சல் அனுப்புங்கள்"
     },
     footer: {
       rights: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
